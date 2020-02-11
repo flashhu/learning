@@ -1,0 +1,21 @@
+.back {
+  height: 200px;
+  width: 200px;
+  background: #eee;
+}
+
+.triangleL {
+  position: relative;
+  top: -200px;
+  width: 0;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent;
+}
+
+.triangleS {
+  position: relative;
+  top:-300px;
+  width: 0;
+  border-top: 50px solid #fff;
+  border-right: 50px solid transparent;
+}

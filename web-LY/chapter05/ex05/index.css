@@ -1,0 +1,270 @@
+.g-index {
+  min-width: 1300px;
+}
+
+.g-hd {
+  padding: 10px 0;
+  box-shadow: 0px 5px 5px 0px #eee;
+}
+
+.g-hd .u-logo {
+  display: inline-block;
+  margin-left: 7px;
+  background-color: #051d4c;
+  height: 45px;
+  width: 16%;
+}
+
+.m-nav {
+  display: inline-block;
+}
+
+.m-nav .u-navop {
+  position: relative;
+  top: -10px;
+  margin-left: 4vw;
+  text-decoration: none;
+  color: #4e5f83;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.g-hd .u-btn {
+  position: relative;
+  top: -10px;
+  margin-left: 20vw;
+  padding: 5px 10px;
+  color: #8469ff;
+  background-color: #fff;
+  border: 2px solid #0069ff;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.m-feature {
+  margin: 30px 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-feature .u-card {
+  position: relative;
+  padding: 40px 50px 50px 50px;
+  height: 305px;
+  width: 355px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.u-pic {
+  background-color: #051d4c;	
+}
+
+.m-feature .u-pic {
+  margin: 0 auto;
+  height: 75px;
+  width: 75px;
+}
+
+.u-title {
+  color: #051d4c;
+}
+
+.m-feature .u-title {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 15px 0 30px 0;
+}
+
+.u-introdc {
+  color: #666;
+}
+
+.m-feature .u-introdc {
+  font-size: 20px;
+}
+
+.m-feature .u-more {
+  text-decoration: none;
+  text-align: center;
+  color: #0069ff;
+  font-weight: bolder;
+  font-size: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 12%;
+}
+
+.m-object {
+  margin: 80px 0;
+  position: relative;
+}
+
+.m-object .u-title {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.m-object .u-introdc {
+  text-align: center;
+  font-size: 28px;
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.m-object .u-chose {
+  margin-top: 50px;
+  margin-left: 7vw;
+  padding-top: 70px;
+  padding-left: 55px;
+  border:1px solid #eee;
+  box-shadow: 0 0 7px 7px #eee;
+  border-radius: 5px;
+  height: 385px;
+  width: 565px;
+  color: #0069ff;
+} 
+
+.m-object .u-boxs {
+  margin-top: 15px;
+}
+
+.m-object .u-box {
+  display: inline-block;
+  border: 2px solid #e1edff;
+  border-radius: 3px;
+  height: 65px;
+  width: 75px;
+}
+
+.m-object .u-box.z-active {
+  border: 2px solid #82b6ff;
+}
+
+.m-object .u-pic {
+  position: absolute;
+  top: 230px;
+  left: 685px;
+  border-radius: 5px;
+  height: 390px;
+  width: 630px;
+}
+
+.m-progres {
+  background-color: #f4f6f9;
+  padding: 50px 50px;
+  position: relative;
+  height: 700px;
+}
+
+.m-progres .u-title {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.m-progres .u-introdc {
+  text-align: center;
+  font-size: 23px;
+  margin: 30px auto;
+}
+
+.m-progres .u-steps {
+  margin: 50px 0 0 150px;
+  font-size: 28px;
+}
+
+.m-progres .u-step {
+  border-left: 2px solid #e7e9ee;
+  line-height: 55px;
+  color: #9ca3a8;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.m-progres .u-step.z-active {
+  border-left: 2px solid #0f72ff;
+  color: #12285d;
+}
+
+.m-progres .u-points {
+  position: absolute;
+  top: 260px;
+  left: 600px;
+  width: 700px;
+}
+
+.m-progres .u-pline {
+  display: flex; 
+}
+
+.m-progres .u-point {
+  width: 350px;
+}
+
+.m-progres .u-pic {
+  height: 60px;
+  width: 60px;
+}
+
+.m-progres .u-point .u-title {
+   font-size: 22px; 
+   font-weight: normal;
+   text-align: left;
+   margin-top: 10px;
+}
+
+.m-progres .u-point .u-introdc {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px; 
+}
+
+.g-ft {
+  background-color: #010e28;
+  font-size: 18px; 
+  position: relative;
+  height: 300px;
+}
+
+.m-right {
+  padding: 50px 50px;
+  width: 300px;
+  text-align: center;
+}
+
+.m-right .u-pic {
+  background: #fff;
+  height: 70px;
+  width: 70px;
+  margin: 0 0 15px 100px;
+}
+
+.m-qnav {
+  display: flex;
+  position: absolute;
+  left: 500px;
+  top: 50px;
+}
+
+.m-qnav .u-nav {
+  color: #eee;
+  margin: 0 50px;
+}
+
+.m-qnav .u-navco {
+  padding-left: 0;
+}
+
+.m-qnav .u-navro {
+  list-style-type: none;
+  margin: 15px 0;
+}
+
+.m-qnav .u-nav .u-navop {
+  text-decoration: none;
+  color: #666;
+}

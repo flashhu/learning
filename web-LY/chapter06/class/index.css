@@ -1,0 +1,65 @@
+圣杯布局*/
+/*.main {        
+    float: left;       
+    width: 100%;
+    background: red;   
+ }  
+ .sub {       
+    float: left;        
+    width: 190px;        
+    margin-left: -100%;               
+    position: relative;  
+    left: -190px; 
+    background: blue; 
+}   
+.extra {        
+    float: left;        
+    width: 230px;        
+    margin-left: -230px; 
+    position: relative; 
+    right: -230px; 
+    background: yellow; 
+ }
+#bd {        
+    padding: 0 230px 0 190px;   
+}*/
+/*双飞翼 三栏布局 l m r*/
+/*#main-wrap {        
+    float: left;       
+    width: 100%;    
+}  
+.sub {       
+    float: left;        
+    width: 190px;        
+    margin-left: -100%;
+    background: blue;   
+}   
+.extra {        
+    float: left;        
+    width: 230px;        
+    margin-left: -230px;
+    position: relative;
+    left: 190px;
+    background: yellow;
+}
+#main {    
+    margin: 0 230px 0 190px;
+    background: red;
+}*/
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+}
+.layout_main {
+    flex: 1;
+    background: red;
+}
+.layout_aside {
+    width: 200px;
+    background: blue;
+}
+
+.left {
+  flex: 0 0 auto;
+}

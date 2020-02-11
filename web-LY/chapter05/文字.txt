@@ -1,0 +1,50 @@
+ProductsCustomers Community PricingSign Up
+Build better apps fasterPredictable pricingSecure and reliable
+From effortless administration tools 
+to robust compute, storage, and 
+networking services.
+Learn more about our products
+Leave complex pricing structures 
+behind.
+Learn more about our pricing
+We take pride in providing a secure 
+and solid platform.
+Learn more about our security
+Designed for developers
+Our easy-to-use control panel and API let you spend more time coding and less time
+managing your infrastructure.
+Choose a datacenter region
+Go from deploying to scaling
+Al & mach has optimized the configuration process to save your team time when running and scaling distributed 
+applications. Al & machine learning workloads, hosted services, client websites, or CI/CD environments.
+Deploy
+Manage
+Secure
+Scale
+Monitor
+Cluster deployments
+Provision multiple Droplets (virtual 
+machines) in seconds within our 
+control panel or via our API in your 
+terminal.
+Pre-builtapps
+Skip the install and configuration 
+process with pre-built open source 
+images supporting Rails. Cassandra. 
+Docker, and more.
+Optimized compute types
+Get the compute resources you 
+need for your app with Standard or 
+Optimized Droplets.
+Global availability
+Deploy to any of our 8 datacenter 
+regions around the world.
+CompanyProductsCommunitySupport
+AboutDropletsTutorialsContact Support
+LeadershipSpacesQ&AFAQ
+Blog
+Careers
+PricingHatch
+2018, LLC. All rights reserved. 
+Proudly made in NY
+---------------------------------我是可爱的页面分割线-------------------------------------

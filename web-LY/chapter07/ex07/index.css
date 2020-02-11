@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1635347 */
+  src: url('//at.alicdn.com/t/font_1635347_w59snenyupa.eot');
+  src: url('//at.alicdn.com/t/font_1635347_w59snenyupa.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1635347_w59snenyupa.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1635347_w59snenyupa.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1635347_w59snenyupa.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1635347_w59snenyupa.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.m-table {
+  min-width: 650px;
+}
+
+.u-tab {
+  display: flex;
+  border-bottom: 2px solid #258ec9;
+}
+
+.u-tab .u-bus {
+  width: 15vw;
+  text-align: center;
+  background: #258ec9;
+  margin: 0;
+  color: #fff;
+}
+
+.u-tab .u-tag {
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+  background: #fd6710;
+  margin: 0 0 2px 3px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.u-info {
+  background: #f8f9f9;
+  border: 1px solid #eee;
+  padding: 5px;
+  color: #444;
+}
+
+.u-info p {
+  margin: 5px 0;
+}
+
+.u-info span {
+  color: #d60000;
+}
+
+.u-btns {
+  background: #fffbde;
+  border: 1px solid #eee;
+  display: flex;
+  padding: 5px;
+
+  justify-content: flex-end;
+}
+
+.u-btns a{
+  margin-right: 10px;
+}
+
+.u-route {
+  margin: 15px 0;
+}
+
+.u-route .u-line {
+  display: flex;
+}
+
+.u-route .u-title {
+  flex: 1;
+  margin-left: 2px;
+  text-align: center;
+  color: #607a90;
+  background: #cedce8;
+}
+
+.u-route .u-title.first {
+  flex: 3;
+}
+
+.u-route .u-line.des {
+  background: #f8f9f9;
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+}
+
+.u-route .u-target {
+  flex: 3;
+}
+
+.u-route .u-location {
+  flex: 1;
+}
+
+.u-route .u-link {
+  flex: 3;
+  text-align: right;
+}
+
+.u-route .u-line.info {
+  align-items: center;
+}
+
+.u-route .u-now {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+}
+
+.u-route .u-time {
+  text-align: center;
+}
+
+.u-route .u-time p {
+  margin: 5px;
+}
+
+.u-route .u-road {
+  height: 4em;
+  width: 15px;
+  background: #96c7d8;
+}
+
+.u-route .u-block {
+  flex: 1;
+  border-left: 1px solid #eee;
+  text-align: center;
+}
+
+.iconfont.bus {
+  font-size: 22px;
+  padding: 15px 5px;
+}
