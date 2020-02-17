@@ -1,0 +1,43 @@
+.g-index {
+  position: relative;
+}
+
+.m-list {
+  border: 1px solid #333;
+  padding: 25px 20px 20px 20px;
+  width: 280px;
+}
+
+.u-pic {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #333;
+  background: #999;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.u-box {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  border: 1px solid #333;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.u-box .u-pic {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+}
+
+.hide {
+  display: none;
+}

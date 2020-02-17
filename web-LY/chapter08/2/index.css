@@ -1,0 +1,30 @@
+.m-nav {
+  display: flex;
+}
+
+.u-tab {
+  height: 30px;
+  width: 60px;
+  border: 1px solid #333;
+}
+
+.u-tab.focus {
+  background: #999;
+}
+
+.g-bd {
+  border: 1px solid #333;
+  width: 400px;
+}
+
+.m-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 300px;
+}
+
+.m-content.hide {
+  display: none;
+}

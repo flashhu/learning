@@ -1,0 +1,30 @@
+.m-nav {
+  display: flex;
+  border-radius: 5px;
+  background: #b9e1dc;
+  height: 35px;
+  width: 460px;
+}
+
+.u-col {
+  background: #87dfd6;
+  width: 100px;
+  padding: 0;
+  margin: 0 0 0 40px;
+}
+
+.u-first, .u-second {
+  background: #87dfd6;
+  text-align: center;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/*.hide {
+  display: none;
+}*/

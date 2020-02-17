@@ -1,0 +1,42 @@
+.m-box {
+  position: relative;
+  padding: 0;
+  height: 400px;
+  width: 700px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.u-pic {
+  position: absolute;
+  list-style-type: none;
+  border-radius: 20px;
+  height: 400px;
+  width: 600px;
+  transition: left 1s;
+}
+
+.u-pic:first-child {
+  left: 0;
+  background: url(./pic/1.jpg) no-repeat center center/cover;
+}
+
+.u-pic:nth-child(2) {
+  left: 140px;
+  background: url(./pic/2.jpg) no-repeat center center/cover;
+}
+
+.u-pic:nth-child(3) {
+  left: 280px;
+  background: url(./pic/3.jpg) no-repeat center center/cover;
+}
+
+.u-pic:nth-child(4) {
+  left: 420px;
+  background: url(./pic/4.jpg) no-repeat center center/cover;
+}
+
+.u-pic:nth-child(5) {
+  left: 560px;
+  background: url(./pic/5.jpg) no-repeat center center/cover;
+}
