@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+
+{% block title %}ORCA{% endblock %}
+
+{% block content %}
+  <headr>
+    <div class="slider">
+	    <div class="slide current"></div>
+	    <div class="slide"></div>
+	    <div class="slide">
+	    	<div class="slide-content">
+	    	   <h2>2018 ~ - </h2>
+	    	   <p>Keep coding!</p>
+	    	   <p>Keep learning new things!</p>
+	    	   <p>Output all the time!</p>
+	        </div>
+	    </div>
+	</div>
+	<div class="buttons">
+		<button id="prev"><i class="fa fa-arrow-left"></i></button>
+		<button id="next"><i class="fa fa-arrow-right"></i></button>
+	</div>
+  </headr>
+  <div class="block"></div>
+  <div class="index-content">
+		<div class="block"></div>
+		<div class="container">
+		  <div class="item item-a">
+		  	 <a href="https://github.com/flashhu"  target="_block">
+		  	 	<div class="float-block">
+					<span>
+					   <h2>CONTRACT</h2>
+					   <p>▷ Click To CSDN</p>
+					   <p>▼  Click To GitHub</p>
+				    </span>		
+				</div>
+  	            <img  class="index-img" src="static/image/4.jpg">
+  	         </a>
+		  </div>
+		  <div class="item item-b">
+			 <img class="index-img" src="static/image/7.jpg">
+		  </div>
+		  <div class="item item-c">
+		  	 <a href="https://me.csdn.net/qq_44537414"  target="_block">
+  	            <img class="index-img" src="static/image/5.jpg">
+  	         </a>
+		  </div>  
+		</div>
+		<div class="sentence">
+		    <p>"You have to understand your own personal DNA.</p>
+		    <p>Don't do things because</p>
+		    <p> I do them or Steve Jobs or Mark Cuban tried it.</p>
+		    <p>You need to know your personal brand and stay true to it."</p>			
+		</div>
+  </div>
+{% endblock %}
+
+{% block include %}
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload - My Blog{% endblock %}
+
+{% block content %}
+<section>
+  <div class="m-box">
+     <form method="POST" enctype="multipart/form-data" action="">
+        <div class="m-upload">
+           <input type="file" name="file" class="m-file">
+           <textarea rows="10" name="m-content" class="m-field" placeholder="Write a few words..."></textarea>
+           <button type="submit" class="m-btn">Upload</button>
+        </div>
+     </form>
+     <br>
+     <p class="tip">Support format: 'png', 'jpg', 'JPG', 'PNG', 'bmp', 'md'</p>
+  </div>
+  <div class="m-pic">
+      <img src="{{ url_for('static', filename= './images/test.jpg',_t=val1) }}" width="855" height="570" alt="你的图片被外星人劫持了～～"/>
+  </div>
+</section>
+{% endblock %}
+

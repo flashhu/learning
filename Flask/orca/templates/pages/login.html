@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login - ORCA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'a.jpg') }}" type="image/x-icon">
+    <link rel="icon" href="{{url_for('static', filename = 'a.jpg') }}" type="image/x-icon">
+  </head>
+  <body class="login-back">
+    <div class="auth-box">
+      <form class="auth-form" action="login" method="POST">
+         <a href="{{ url_for('log.index') }}" style="font-family:arial;" class="auth-title">Welcome</a>
+         <input class="txtb" type="text" name="username" placeholder="Username" value="{% if session.usr %}{{ session.get('username') }}{% endif %}">
+         <input class="txtb" type="password" name="password" placeholder="Password" value="{% if session.usr %}{{ session.get('password') }}{% endif %}">
+         <input class="auth-btn" type="submit" name="" value="Log In">
+      </form>
+    </div>
+    {% for message in get_flashed_messages() %}
+        <div class="m-flash">{{ message }}</div>
+    {% endfor %}
+  </body>
+</html>

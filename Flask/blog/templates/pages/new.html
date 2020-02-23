@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}New - My Blog{% endblock %}
+
+{% block content %}
+{#<section>#}
+{#  <form method="POST" enctype="multipart/form-data" action="">#}
+{#    <div class="m-new">#}
+{#      <input type="file" name="file" class="m-file">#}
+{#      <input type="text" name="m-date" class="m-field" placeholder="Date (example: 2019-04-01)" value="{{da}}">#}
+{#      <input type="text" name="m-title" class="m-field" placeholder="Title">#}
+{#      <textarea rows="10" name="m-content" class="m-field" placeholder="Content"></textarea>#}
+{#      <button type="submit" class="m-btn">Add Blog</button>#}
+{#    </div>#}
+{#  </form>#}
+{#  <br>#}
+{#  <p class="tip">Support format: 'png', 'jpg', 'JPG', 'PNG', 'bmp'</p>#}
+{#</section>#}
+<section>
+  <form method="post">
+    <div class="m-new">
+      <div class="m-row">
+        <input type="text" name="m-title" class="m-field" placeholder="Title">
+        <input type="text" name="m-date" class="m-field" placeholder="Date (example: 2019-04-01)" value="{{da}}">
+      </div>
+      <div class="m-func">
+        <input type="file" name="file" class="m-btn" id="uploadFile">
+        <a class="m-btn"  id="uploadBtn">IMG</a>
+        <a class="m-btn"  id="boldBtn">BD</a>
+        <a class="m-btn"  id="codeBtn">CD</a>
+        <a class="m-btn"  id="formBtn">FM</a>
+        <a class="m-btn"  id="linkBtn">LK</a>
+        <a class="m-btn"  id="listBtn">LS</a>
+        <a class="m-btn"  id="h1Btn">#1</a>
+        <a class="m-btn"  id="h2Btn">#2</a>
+        <a class="m-btn"  id="h3Btn">#3</a>
+      </div>
+      <textarea rows="10" name="m-content" class="m-field" id="cnt"></textarea>
+      <button type="submit" class="m-btn" style="float: left;margin: 10px;">Add Blog</button>
+    </div>
+  </form>
+</section>
+{% endblock %}
+
+{% block include %}
+  <script type="text/javascript" src="{{ url_for('static', filename='new.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+   <meta charset="utf-8"/>
+   <title>{% block title %}{% endblock %}</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="shortcut icon" href="{{url_for('static', filename = 'avatar.jpg') }}" type="image/x-icon">
+   <link rel="icon" href="{{url_for('static', filename = 'avatar.jpg') }}" type="image/x-icon">
+   <link rel="stylesheet" href="static/atom-one-light.css">
+   <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+{#   <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">#}
+</head>
+<body>
+   <div class="wrapper">
+    <form class="home-form" action="search" method="POST">
+       <input class="txtb" type="text" name="keyWord" placeholder="Please enter a date to search (example: 2019-04-01)">
+    </form>
+    <nav  class="auth-nav">
+        <ul>
+            {% if session['isLogin'] %}
+             <li><a href="{{ url_for('auth.logout') }}">Logout</a>
+             <li><a  href="{{ url_for('log.upload') }}">Upload</a>
+             <li><a href="{{ url_for('log.new') }}">New</a>
+             <li><div class="login-info" style="color: #000;">{{ session['usr'] }}</div>
+            {% else %}
+            <li><a href="{{ url_for('auth.login') }}">Login</a>
+            <li><a href="{{ url_for('auth.register') }}">Register</a>
+            {% endif %}
+        </ul>
+    </nav>
+    <h1 class="ttl">My Blog</h1>
+    <h4>stay hungry stay foolish</h4>
+    <nav class="home-nav">
+       <ul>
+	   	  <li><a href="{{ url_for('index')}}">Home</a>
+	  	  <li><a href="{{ url_for('log.about')}}">About</a>
+	      <li><a href="https://github.com/flashhu"  target="_block">GitHub</a>
+       </ul>
+    </nav>
+    <div class="g-blog">
+      {% for message in get_flashed_messages() %}
+        <div class="m-flash">{{ message }}</div>
+      {% endfor %}
+      {% block content %}{% endblock %}
+    </div>
+  {% block include %}{% endblock %}
+  </div>
+</body>

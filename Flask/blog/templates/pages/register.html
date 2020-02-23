@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register - My Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body style="background-image: url(../static/b.jpg);">
+    <div class="auth-box">
+      <form class="auth-form" action="register" method="POST">
+         <a href="{{ url_for('index') }}" style="font-family:arial;" class="auth-title">Welcome</a>
+         <input class="txtb" type="text" name="username" placeholder="Username">
+         <input class="txtb" type="password" name="password" placeholder="Password">
+         <input class="auth-btn" type="submit" name="" value="register">
+      </form>
+    </div>
+  </body>
+</html>

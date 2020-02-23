@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>ORCA</title>
+    <!--<link rel="stylesheet" href="static/style.css">-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<!-- get font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="{{url_for('static', filename = 'a.jpg') }}" type="image/x-icon">
+    <link rel="icon" href="{{url_for('static', filename = 'a.jpg') }}" type="image/x-icon">
+</head>
+<body>
+   <headr>
+	 <nav>
+   	  <div class = "menu">
+   	  	 <ul>
+            <div class="logo">ORCA</div>
+			{% if session['isLogin'] %}
+			<li><div class="login-info" style="color: #000;">{{ session['usr'] }}</div>
+   	  	 	<li><a href="{{ url_for('log.index')}}" class="menu-item">Home</a></li>
+   	  	 	<li><a href="{{ url_for('log.blog')}}" class="menu-item">Blog</a></li>
+   	  	 	<li><a href="{{ url_for('log.new') }}" class="menu-item">Add</a></li>
+   	  	 	<li><a href="https://developer.mozilla.org/zh-CN/" target="_block" class="menu-item">Archive</a></li>
+   	  	 	<li><a href="{{ url_for('auth.logout') }}" class="menu-item">LogOut</a></li>
+            <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+   	  	 	<li><a href="#" id="list"><i class="fa fa-align-justify"></i></a></li>
+			{% else %}
+   	  	 	<li><a href="{{ url_for('log.index')}}" class="menu-item">Home</a></li>
+   	  	 	<li><a href="{{ url_for('log.blog')}}" class="menu-item">Blog</a></li>
+   	  	 	<li><a href="{{ url_for('log.new') }}" class="menu-item">Add</a></li>
+   	  	 	<li><a href="https://developer.mozilla.org/zh-CN/" target="_block" class="menu-item">Archive</a></li>
+   	  	 	<li><a href="{{ url_for('auth.login') }}" class="menu-item">LogIn</a></li>
+            <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+   	  	 	<li><a href="#" id="list"><i class="fa fa-align-justify"></i></a></li>
+			{% endif %}
+   	  	 </ul>
+   	  	 <div class="search-form">
+   	  	 	<form>
+   	  	 	   <input type="text" name="" placeholder="Search ORCA">
+   	  	    </form>
+   	  	 </div>
+   	  	 <a class="close"><i class="fa fa-times"></i></a>
+   	  </div>
+    </nav>
+  </headr>
+  <div class="container">
+       <div class="content">
+         {% for message in get_flashed_messages() %}
+          <div class="m-flash">{{ message }}</div>
+         {% endfor %}
+         {% block content %}{% endblock %}
+       </div>
+      {% block include %}{% endblock %}
+  </div>
+  <footer class="foot">
+	  <div class="footer-content">
+		<p>© 2019 ORCA.</p>
+		<p>Email: flashhu@163.com</p>
+	  </div>
+  </footer >
+</body>
+</html>

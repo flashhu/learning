@@ -1,0 +1,62 @@
+{% extends 'base.html'%}
+
+{% block title %}My Blog{% endblock %}
+
+{% block content %}
+<section>
+  {% for d in data %}
+  <div class="m-blog">
+    <div class="m-title">{{d.date}}</div>
+    <div class="m-body">
+      {% if not d.title %}
+       <h3><em>Mood    --  {{ d.user }}</em><a href="#" class="m-more">Read More &raquo;</a></h3>
+      {% else %}
+       <h3><em>{{d.title}}    --  {{ d.user }}</em><a href="#" class="m-more">Read More &raquo;</a></h3>
+      {% endif %}
+       <div class="m-content">
+           <p class="m-html"></p>
+           <p class="m-code">{{d.content|safe}}</p>
+          {% if  d.img %}
+           <img src="{{ url_for('static', filename= './images/' + d.img ,_t=val1) }}" width="641.25" height="427.5" alt="你的图片被外星人劫持了～～"/>
+          {% endif %}
+          {% if d.mdf %}
+           <div class="m-html">
+               <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+               <script src="https://cdn.bootcss.com/marked/0.3.4/marked.min.js"></script>
+               <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+               <link rel="stylesheet" href="static/atom-one-light.css">
+               <script type="text/javascript">
+                var box = $('#content');
+                var content = box.html();
+                marked.setOptions({
+                  renderer: new marked.Renderer(),
+                  pedantic: false,
+                  gfm: true,
+                  tables: true,
+                  breaks: false,
+                  sanitize: false,
+                  smartLists: true,
+                  smartypants: false,
+                  xhtml: false
+                })
+                hljs.initHighlightingOnLoad();
+                box.html(marked(content))
+               </script>
+               <div id="content">{{ read_md('blog/static/documents/' + d.mdf )|safe }}</div>
+           </div>
+          {% endif %}
+       </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
+
+{% block include %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="static/atom-one-light.css">
+{#<link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">#}
+<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock %}
