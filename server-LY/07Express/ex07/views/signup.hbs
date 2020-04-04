@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <form name="form1">
+        <input type="email" name="email" placeholder="邮箱" required><br>
+        <input type="text" name="verify" placeholder="验证码" required>
+        {{#if showbtn}}
+          <button type="button" onclick="send()">获取验证码</button>
+        {{/if}}
+        {{#if timer}}
+          <span>{{timer}}</span>
+        {{/if}}<br>
+        <input type="text" name="passwd" placeholder="密码" required><br>
+        <input type="text" name="rePasswd" placeholder="确认密码"  required><br>
+        <button type="button" onclick="save()">提交</button>
+        {{#if message}}
+          <p>{{message}}</p>
+        {{/if}}
+    </form>
+    <script>
+        function send() {
+          document.form1.action = "/sendcode";
+          document.form1.method = "post";
+          document.form1.submit();
+        }
+        function save() {
+          document.form1.action = "/";
+          document.form1.method = "post";
+          document.form1.submit();
+        }
+    </script>
+  </body>
+</html>
