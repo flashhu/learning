@@ -14,9 +14,10 @@
         {{#if timer}}
           <span>{{timer}}</span>
         {{/if}}<br>
-        <input type="text" name="passwd" placeholder="密码" required><br>
-        <input type="text" name="rePasswd" placeholder="确认密码"  required><br>
-        <button type="button" onclick="save()">提交</button>
+        <input type="password" name="passwd" placeholder="密码" required><br>
+        <input type="password" name="rePasswd" placeholder="确认密码"  required><br>
+        <button type="button" onclick="save()">注册</button>
+        <a href="/login">登录</a>
         {{#if message}}
           <p>{{message}}</p>
         {{/if}}
