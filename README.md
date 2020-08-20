@@ -31,4 +31,8 @@
 
 #### hands-on-data-analysis
 
-* [datawhale组队学习](https://github.com/datawhalechina/hands-on-data-analysis) 数据分析学习记录
+* [datawhale组队学习](https://github.com/datawhalechina/hands-on-data-analysis) 数据分析学习记录 [Jupyter传送门](https://nbviewer.jupyter.org/github/flashhu/learning/tree/master/hands-on-data-analysis/)
+
+#### cms-fe
+
+* [cms-server](https://github.com/flashhu/cms-server)  前端小程序（测试版）

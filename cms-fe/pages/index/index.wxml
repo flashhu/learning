@@ -1,0 +1,21 @@
+<l-button l-class="btn" size="long" bind:lintap="onGetToken">获取Token</l-button>
+<l-button l-class="btn" size="long" bind:lintap="onVerifyToken">验证Token</l-button>
+
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetLatest">获取最新期刊</l-button>
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetPrev">获取上一期期刊</l-button>
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetOne">获取某一期期刊</l-button>
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetNext">获取下一期期刊</l-button>
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetClassicFavor">获取期刊点赞情况</l-button>
+<l-button l-class="btn" size="long" type="warning" bind:lintap="onGetMyFavorList">获取用户喜欢的期刊</l-button>
+
+<l-button l-class="btn" size="long" type="error" bind:lintap="onLike">点赞</l-button>
+<l-button l-class="btn" size="long" type="error" bind:lintap="onDislike">取消点赞</l-button>
+
+<l-button l-class="btn" size="long" type="success" bind:lintap="onGetHotBook">获取热门书籍列表</l-button>
+<l-button l-class="btn" size="long" type="success" bind:lintap="onGetDetail">获取书籍详情</l-button>
+<l-button l-class="btn" size="long" type="success" bind:lintap="onSearch">搜索书籍</l-button>
+<l-button l-class="btn" size="long" type="success" bind:lintap="onGetFavorBookNum">获取喜欢的书籍数量</l-button>
+<l-button l-class="btn" size="long" type="success" bind:lintap="onGetBookFavor">获取书籍的点赞情况</l-button>
+
+<l-button l-class="btn" size="long" bind:lintap="onAddComment">新增短评</l-button>
+<l-button l-class="btn" size="long" bind:lintap="onGetComment">获取书籍短评</l-button>
