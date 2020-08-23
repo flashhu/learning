@@ -103,25 +103,57 @@
 
 > 数据变稀疏，训练时不受分类值大小影响
 
+### Task03
+
+#### 1. 合并数据
+
+**情况一：左右合并**
+
+① [`pandas.concat`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html)
+
+例，`pd.concat([df_1eft_up, df_right_up], axis=1)`
+
+不设`axis=1`，默认竖向的合并，上半部分接下半部分
+
+② [`DataFrame.join`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.join.html)
+
+例，`df_1eft_up.join(df_right_up)`
+
+③ [`pandas.merge`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html)
+
+例，`pd.merge(df_1eft_up, df_right_up, left_index=True, right_index=True)`
+
+`left_index`，`right_index` 默认 False, 用于设置是否设左/右侧 DataFrame 的索引为连接键
+
+**情况二：上下合并**
+
+① [`pandas.concat`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html)
+
+例，`pd.concat([result_up, result_down], ignore_index=True)`
+
+不设`ignore_index=True`，默认不修改原有索引
+
+② [`DataFrame.append`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.append.html)
+
+例，`result_up_m.append(result_down_m, ignore_index=True)`
+
+#### 2. `pandas.merge`，`DataFrame.join`，`pandas.concat`异同
+
+**同: **用于合并
+
+**异: **
+
+* `pandas.concat`沿特定轴（axis）连接，可以合并两个方向；
+*  `pandas.merge`，`DataFrame.join`沿列或列索引（columns or indexs）连接，只能合左右方向
+* `pandas.merge` 默认使用列的交集连接
+
+* `DataFrame.join` 默认使用 index-on-index 连接
 
 
 
+[**GroupBy**](https://pandas.pydata.org/pandas-docs/stable/reference/groupby.html)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* `df.groupby('key1')['data1']` 等价 `df['data1'].groupby(df['key1'])`，前者是后者的语法糖
 
 
 
