@@ -157,5 +157,16 @@
 
 
 
+### Task04
 
+| 图表类型 | 适用             |
+| -------- | ---------------- |
+| 柱状图   | 对比同组数据     |
+| 折线图   | 某数据的变化趋势 |
+| 饼图     | 数据间分布情况   |
 
+[pandas.DataFrame.plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html)
+
+[Matplotlib](https://www.matplotlib.org.cn/en/API/)
+
+[seaborn API](http://seaborn.pydata.org/api.html)
