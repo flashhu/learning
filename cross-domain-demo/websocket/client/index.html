@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websocket</title>
+</head>
+<body>
+    <div>输入框失焦即向服务端发送数据</div>
+    <div>user input：<input type="text"></div>
+    <script>
+        var socket = new WebSocket('ws://localhost:8080');
+
+        // 连接成功处理
+        socket.onmessage =  function (e) {
+            console.log('data from server: ---> ' + e.data);
+        }
+
+        document.getElementsByTagName('input')[0].onblur = function () {
+            socket.send(this.value);
+        };
+    </script>
+</body>
+</html>

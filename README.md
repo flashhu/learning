@@ -40,3 +40,7 @@
 #### todo-ts-react
 
 * 参考[教程](https://www.youtube.com/watch?v=ODvirqIC09A) React Hooks + TypeScript Todo List
+
+#### cross-origin-demo
+
+* 对应 [文章](https://flashhu.github.io/#/network) 实验解决跨域的方法
