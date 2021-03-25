@@ -44,3 +44,7 @@
 #### cross-origin-demo
 
 * 对应 [文章](https://flashhu.github.io/#/network) 实验解决跨域的方法
+
+#### promise-demo
+
+* 对应 [教程](https://www.bilibili.com/video/BV137411e7KA?from=search&seid=15555221239292441127) 手写 promise
