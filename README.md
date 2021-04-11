@@ -48,3 +48,7 @@
 #### promise-demo
 
 * 对应 [教程](https://www.bilibili.com/video/BV137411e7KA?from=search&seid=15555221239292441127) 手写 promise
+
+#### flag-server
+
+* 参考 [由校： 实现一个监控系统](https://file.hujingo.top/ali/wvpYVNSLzasbil8pJW1_293429812333___hd.mp4) 简易监控系统实践
