@@ -16,7 +16,7 @@
     "express-session": "^1.17.0",
     "mysql": "^2.18.1",
     "path": "^0.12.7",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "validator.tool": "^1.0.10"
   }
 }
